@@ -1,1 +1,11 @@
-https://drive.google.com/file/d/164Io2biYV4UimtnxzkuPNY15QrUmXCNb/view?usp=sharing
+# Empanada
+
+## Scripts
+
+- `00_data-import.R`: Data import 
+- `01_eda.R`: EDA
+- `02_model-exploration`: Model exploration 
+- `03_final-model`: Final model 
+
+
+
