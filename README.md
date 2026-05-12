@@ -1,4 +1,4 @@
-# Empanadas group
+# Empanadas group 🥟
 
 ## Files
 
