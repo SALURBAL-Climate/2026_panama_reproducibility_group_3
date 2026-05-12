@@ -1,4 +1,6 @@
 # Panama reproducibility analysis workflow
+## Author: Josiah Kephart
+
 ## Scripts, run in order
 ### 00_read_data.R; Load packages and read in data
 ### 01_EDA.R; Basic exploratory analysis of analysis data
