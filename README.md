@@ -1,4 +1,6 @@
 # Empanada
+This is an experiment
+The aim of this activity was to try the system. 
 
 ## Scripts
 
