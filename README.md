@@ -1,1 +1,10 @@
-https://drive.google.com/file/d/164Io2biYV4UimtnxzkuPNY15QrUmXCNb/view?usp=sharing
+## Empanadas 
+
+# Files (Scripts) 
+
+00_data_import: import data  
+01_exploratory_analysis: exploratory analysis tables and figures 
+02_exploratory_modelling: exploratory modellling analysis 
+
+
+
