@@ -1,3 +1,4 @@
+# Data import
 library(tidyverse)
 library(arrow)
 library(gnm)
@@ -56,6 +57,7 @@ df_950907 <- read_parquet("C:/Users/dpw48/OneDrive - Drexel University/classes/2
 df_970761 <- read_parquet("C:/Users/dpw48/OneDrive - Drexel University/classes/2026_panama_reproducibility/c970761.parquet")
 df_990688 <- read_parquet("C:/Users/dpw48/OneDrive - Drexel University/classes/2026_panama_reproducibility/c990688.parquet")
 
+# EDA Exploratory Data Analysis
 df <- bind_rows(df_000274, df_005813, df_020034, df_027882, df_031958, df_036448, df_048207, df_068978, df_111051, df_150018, df_178624, df_185362, df_200402, df_202348, df_254623, df_256108, df_257871, df_260957, df_306551, df_392199, df_408958, df_431952, df_450931, df_490248, df_512953, df_533492, df_538872, df_548811, df_606621, df_642236, df_645680, df_660354, df_660828, df_677352, df_677357, df_687598, df_689963, df_735245, df_747285, df_751506, df_803570, df_804029, df_822241, df_833506, df_867383, df_876031, df_914222, df_950907, df_970761, df_990688)
 
 df <- df |> 
@@ -78,6 +80,9 @@ plot(df$deaths, df$pm25)
 
 df |> 
   summarize(deaths = sum(deaths), temp = mean(temp))
+
+
+# Model exploration
 
 # Model 1
 cbt1 <- crossbasis(
@@ -131,6 +136,7 @@ pred3_2 <- crosspred(cbt1, fit3_2)
 plot(pred3_1, ptype = "overall", main = "RR Temp w/ Low AP")
 plot(pred3_2, ptype = "overall", main = "RR Temp w/ High AP")
 
+# Final model 
 # We pick model 3
 attrdl(
   x = df$temp,
